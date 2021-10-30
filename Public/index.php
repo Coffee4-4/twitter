@@ -1,11 +1,7 @@
-<?php 
-    require_once "../vender/autoload.php";
+<?php
 
-    $route = new \App\route;
+    require_once "../vendor/autoload.php";
 
-    echo "Legal";
+    $route = new \App\Route;
 
-    echo "<pre>";
-    print_r($route->run(''));
-    echo "</pre>";
 ?>

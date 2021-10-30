@@ -1,10 +1,12 @@
 <?php
-namespace App;
-use MF\init\Bootstrap;
 
-class route extends Bootstrap{
+namespace App;
+use MF\Init\Bootstrap;
+
+class Route extends Bootstrap{
 
     protected function initRoutes(){
+        
         $routes['home'] = array(
             'route' => '/',
             'controller' => 'indexController',
@@ -20,4 +22,6 @@ class route extends Bootstrap{
         $this->setRoutes($routes);
     }
 }
+
+
 ?>

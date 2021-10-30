@@ -1,16 +1,17 @@
 <?php
-    namespace App\Controllers;
 
-    use App\Controllers;
+namespace App\Controllers;
 
-    class indexController{
-        public function index(){
-            echo "Chegamos na IndexController pela pagina Index";
-        }
+class IndexController{
 
-        public function sobreNos(){
-            echo "Chegamos na IndexController pela pagina Sobre Nós";
-        }
+    public function index(){
+        $dados = ['cama','mesa','banho'];
+        
+        require_once "../App/Views/index/index.phtml";
     }
 
-?>
+    public function sobreNos(){
+        require_once "../App/Views/index/sobreNos.phtml";
+    }
+
+}
